@@ -1,68 +1,126 @@
-<! DOCTYPE html >
-<html lang =" fr">
-<head >
-<meta charset ="UTF -8" >
+<!DOCTYPE html >
+<html lang ="fr">
+    <head >
+<meta charset ="UTF-8" >
 <title > Salaam Aleykum Sara </title> 
 </head >
 
 <body >
-<h1 > Salaam Aleykum Sara !</h1 >
-<p> Bienvenue dans mon premier projet web : Jàng Afrig .</p>
+<header >
 <h1>Jàng Afrig </h1>
-<h2>Apprendre l'Afrique , un pays à la fois </h2>
+<p>Apprendre l'Afrique , un pays à la fois </p>
+</header >
+<nav>
+<a href="index.html">Accueil </a> |
+<a href="quiz.html">Jouer </a> |
+<a href="scores.html">Mes Scores </a> |
+<a href="apropos.html">À propos </a>
+</nav>
+<main>
+<section >
+<h2>Bienvenue </h2>
 <p>
-Bienvenue sur <strong >Jàng Afrig </strong >, un quiz géographique sur
-les
-<strong >54 pays africains </strong >. Choisissez un mode de jeu,
-répondez à
-10 questions , et battez votre meilleur score !
+Bienvenue sur <strong >Jàng Afrig </strong >, un quiz
+géographique sur les
+<strong >54 pays africains </strong >. Choisissez un mode de
+jeu et battez
+votre meilleur score !
 </p>
-<p>
-    Le mot <em>jàng</em> signifie <em>«&nbsp;apprendre , é
-tudier&nbsp;»</em>
-en wolof. Le projet est développé dans le cadre du cours
-<strong >Fondamentaux du Web </strong > en L1 DUT1-Info à l'ESP/UCAD.
-</p>
+</section >
+<section >
 <h2>Les modes de jeu </h2>
 <ul>
-<li>
-<strong >Capitales </strong >
-<ul>
-<li>Identifier la capitale d'un pays africain </li>
-<li>Exemple : « Quelle est la capitale du Mali ? »</li>
+<li><strong >Capitales </strong > : « Quelle est la capitale
+du Mali ? »</li>
+<li><strong >Drapeaux </strong > : « À quel pays appartient
+ce drapeau ? »</li>
+<li><strong >Langues </strong > : « Dans quel pays
+parle -t-on le swahili ? »</li>
+<li><strong >Voisins </strong > : « Combien de voisins a
+l'Algérie ? »</li>
+<li><strong >Chrono </strong > : maximum de bonnes réponses
+en 60 secondes </li>
 </ul>
-</li>
-<li>
-<strong >Drapeaux </strong >
-<ul>
-<li>Reconnaître le drapeau d'un pays </li>
-<li>Exemple : « À quel pays appartient ce drapeau ? »</li>
-</ul>
-</li>
-<li>
-<strong >Langues </strong >
-<ul>
-<li>Associer une langue à un pays </li>
-<li>Exemple : « Dans quel pays parle -t-on le swahili ? »</li>
-</ul>
-</li>
-<li>
-<strong >Voisins </strong >
-<ul>
-<li>Compter les pays frontaliers </li>
-<li>Exemple : « Combien de voisins a l'Algérie ? »</li>
-</ul>
-</li>
-<li>
-<strong >Chrono </strong >
-<ul>
-<li>Maximum de bonnes réponses en 60 secondes </li>
-</ul>
-</li>
-</ul>
+</section >
+<section >
 <h2>Palmarès des champions </h2>
-<p>Les meilleurs scores enregistrés (données fictives pour le moment)
-:</p>
+<p><a href="scores.html">Voir le classement complet </a></p>
+</section >
+</main>
+<footer >
+<p>
+&copy; 2025--2026 Jàng Afrig --- Projet pédagogique L1
+DUT1-Info, ESP/UCAD.
+<a>href="apropos.html">En savoir plus </a>.
+</p>
+</footer >
+<!DOCTYPE html>
+<html lang ="fr">
+<head>
+<meta charset="UTF-8">
+<headtitle >Quiz --- Jàng Afrig </headtitle >
+</head>
+<body>
+<header >
+<h1>Jàng Afrig </h1>
+<p>Apprendre l'Afrique , un pays à la fois </p>
+</header >
+<nav>
+<a href="index.html">Accueil </a> |
+<a href="quiz.html">Jouer </a> |
+<a href="scores.html">Mes Scores </a> |
+<a href="apropos.html">À propos </a>
+</nav>
+<main>
+<section >
+<h2>Avant de jouer </h2>
+<form>
+<p>
+<label for="pseudo">Votre pseudo :</label >
+<input type="text" id="pseudo" name="pseudo"
+placeholder="Ex. Fatou" required >
+
+</p>
+<p>
+<label for="mode">Mode de jeu :</label >
+<select id="mode" name="mode" required >
+<option value="">-- Choisir un mode
+--</option >
+<option value="capitales">Capitales </option >
+<option value="drapeaux">Drapeaux </option >
+<option value="langues">Langues </option >
+<option value="voisins">Voisins </option >
+<option value="chrono">Chrono </option >
+</select >
+</p>
+<p>
+<button type="submit">Commencer le quiz </button >
+</p>
+</form>
+</section >
+</main>
+<footer >
+<p>&copy; 2025--2026 Jàng Afrig --- L1 DUT1-Info,
+ESP/UCAD.</p>
+</footer >
+<main>
+<section >
+<h2>Résultat de votre partie </h2>
+<p>Bravo <strong >Fatou </strong > !</p>
+<p>Mode : <em>Capitales </em></p>
+<p>Score : <strong >8 / 10</strong ></p>
+<p>
+<a href="resultat.html">Rejouer </a> |
+<a href="scores.html">Voir mes scores </a> |
+<a href="index.html">Retour à l'accueil </a>
+</p>
+</section >
+</main>
+<main>
+<section >
+<h2>Palmarès des champions </h2>
+<p>Les meilleurs scores enregistrés (données fictives pour
+l'instant) :</p>
 <table >
 <tr>
 <th>Rang </th>
@@ -107,20 +165,50 @@ en wolof. Le projet est développé dans le cadre du cours
 <td>5 mars 2026</td>
 </tr>
 </table >
+</section >
+</main>
+<main>
+<section >
 <h2>À propos de Jàng Afrig </h2>
 <p>
-<img src="image/drapeau.png" alt="Drapeau africain" width="200">
+Jàng Afrig est une application web de quiz géographique sur
+les
+<strong >54 pays africains </strong >. Le mot <em>jàng</em>
+signifie
+« apprendre , étudier » en wolof.
 </p>
 <p>
-Le code source du projet est disponible sur GitHub :
+Ce projet est développé dans le cadre du cours
+<strong >Fondamentaux du Web </strong > en L1 DUT1-Informatique
+à l'École Supérieure Polytechnique (ESP/UCAD).
+</p>
+</section >
+<section >
+<h2>Sources des données</h2>
+<p>
+Les données sur les pays sont fournies par
+<a href="https://restcountries.com">REST Countries v3.1</a>,
+une API libre et gratuite.
+</p>
+</section >
+<section >
+<h2>Technologies utilisées</h2>
+<ul>
+<li>HTML5 pour la structure </li>
+<li>CSS3 pour la mise en forme </li>
+<li>JavaScript moderne pour l'interactivité</li>
+<li>Git et GitHub pour le versioning et l'hébergement </li>
+</ul>
+</section >
+<section >
+<h2>Code source </h2>
+<p>
+Le code est disponible sur GitHub :
 <a href="https://github.com/Sara06-tech/jang-afrig">
-github.com/Sara06-tech/jang-afrig
+github.com/votre -username/jang-afrig
 </a>
 </p>
-<p>
-Données fournies par
-<a href="https://restcountries.com">REST Countries </a>,
-une API libre et gratuite sur les pays du monde.
-</p>
+</section >
+</main>
 </body >
 </html >
